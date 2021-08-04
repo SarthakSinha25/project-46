@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en"></html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+        <script src="lib/p5.js"></script>
+        <script src="lib/p5.dom.min.js"></script>
+        <script src="lib/p5.sound.min.js"></script>
+        <script src="lib/p5.play.js"></script>
+        <script src="lib/matter.js"></script>
+        <script src="js/Game.js"></script>
+        <script src="js/Player.js"></script>
+        <script src="Level1.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAhI59z2ZaOHXqwl_obM2kE9gp1kpkVb6o",
+    authDomain: "space-adventure-2.firebaseapp.com",
+    projectId: "space-adventure-2",
+    storageBucket: "space-adventure-2.appspot.com",
+    messagingSenderId: "465632296647",
+    appId: "1:465632296647:web:a1457405fb6cd13cbe08e2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</script>
+    </head>
+
+
+    <body>
+      <script src="sketch.js"></script>
+      <script>
+        function getFullscreenElement(){
+          return document.fullscreenElement
+              || document.webkitFullscreenElement
+              || document.mozFullscreenElement
+              || document.mskitFullscreenElement
+        }
+
+            document.addEventListener("dblclick",  () => {
+              document.documentElement.requestFullscreen().catch(() => {
+                console.log(e);
+              })
+            })
+
+        document.addEventListener("fullscreenchange", () => {
+          console.log("ss");
+        })
+      </script>
+
+    </body>
+</html>
